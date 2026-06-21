@@ -43,9 +43,20 @@ import matplotlib.pyplot as plt
 
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 x = range(len(my_list))
-plt.plot(x, my_list)
+plt.plot(x, my_list, marker="o", label="Input values")
+plt.title("Merge Sort Input")
+plt.xlabel("Index")
+plt.ylabel("Value")
+plt.legend()
+plt.grid(True)
 plt.show()
+
 mergeSort(my_list)
 x = range(len(my_list))
-plt.plot(x, my_list)
+plt.plot(x, my_list, marker="o", label="Sorted values")
+plt.title("Merge Sort Output")
+plt.xlabel("Index")
+plt.ylabel("Value")
+plt.legend()
+plt.grid(True)
 plt.show()
