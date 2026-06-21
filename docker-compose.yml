@@ -1,0 +1,13 @@
+services:
+  tests:
+    build: .
+    volumes:
+      - .:/app
+    command: pytest
+
+  single-element:
+    build: .
+    volumes:
+      - .:/app
+    command: python run.py
+
